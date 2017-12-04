@@ -36,7 +36,7 @@ function createDialog() {
     	'Are you hungry?',  // message
         dialogDismissed,         // callback
         'Tap Yes or No',            // title
-        ['YES!', 'NO']                  // buttons
+        ['YES!', 'NO...']                  // buttons
     );
 
 }
@@ -45,8 +45,8 @@ function createDialog() {
         	
 function dialogDismissed(buttonIndex) {
 	
-	if(buttonIndex==1) new Toast({content: "You're easily pleased", duration: 3000});
-   	else if(buttonIndex==2) new Toast({content: 'It is rather boring.', duration: 3000});
+	if(buttonIndex==1) new Toast({content: "Have something to eat!", duration: 3000});
+   	else if(buttonIndex==2) new Toast({content: 'Right, no problemo.', duration: 3000});
 
 }
 
